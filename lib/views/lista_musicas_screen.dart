@@ -20,7 +20,7 @@ class ListaMusicasScreen extends StatelessWidget {
             subtitle: Text(musica.descricao),
             trailing: IconButton(
               icon: const Icon(Icons.delete, color: Colors.red),
-              tooltip: 'Excluir música', // Tooltip para o botão de deletar
+              tooltip: 'Excluir música',
               onPressed: () {
                 viewModel.removerMusica(musica.id);
                 ScaffoldMessenger.of(context).showSnackBar(
@@ -47,3 +47,4 @@ class ListaMusicasScreen extends StatelessWidget {
     );
   }
 }
+
