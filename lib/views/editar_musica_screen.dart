@@ -23,7 +23,7 @@ class EditarMusicaScreen extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
-          tooltip: null, // Remove o texto "Back" ao passar o mouse
+          tooltip: null,
         ),
       ),
       body: Padding(

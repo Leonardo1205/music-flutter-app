@@ -49,7 +49,6 @@ class AdicionarMusicaScreen extends StatelessWidget {
                   );
                   Navigator.pop(context);
 
-                  // Exibir SnackBar de sucesso
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
                       content: Text('Música adicionada com sucesso!'),

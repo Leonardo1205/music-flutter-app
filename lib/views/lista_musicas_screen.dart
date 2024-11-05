@@ -21,6 +21,7 @@ class ListaMusicasScreen extends StatelessWidget {
             trailing: IconButton(
               icon: const Icon(Icons.delete, color: Colors.red),
               tooltip: 'Excluir música',
+              // Exclui a música e exibe uma mensagem de sucesso
               onPressed: () {
                 viewModel.removerMusica(musica.id);
                 ScaffoldMessenger.of(context).showSnackBar(
@@ -28,6 +29,7 @@ class ListaMusicasScreen extends StatelessWidget {
                 );
               },
             ),
+            // Ao clicar, navega para a tela de edição de música
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
@@ -37,6 +39,7 @@ class ListaMusicasScreen extends StatelessWidget {
           );
         },
       ),
+      // Botão para adicionar nova música
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.push(
           context,
@@ -47,4 +50,3 @@ class ListaMusicasScreen extends StatelessWidget {
     );
   }
 }
-
